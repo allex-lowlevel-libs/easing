@@ -1,0 +1,27 @@
+{
+  "name": "allex_easinglib",
+  "version": "0.0.1",
+  "description": "Easing lib",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allex-lowlevel-libs/easing.git"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "ecosystem:vektr"
+  ],
+  "author": "HERS Development Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allex-lowlevel-libs/easing/issues"
+  },
+  "homepage": "https://github.com/allex-lowlevel-libs/easing#readme",
+  "devDependencies": {
+    "allexlib": "git+ssh://git@gitlab.hers.rs:allex/lib.git",
+    "chai": "^3.5.0"
+  }
+}
