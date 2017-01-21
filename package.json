@@ -1,5 +1,5 @@
 {
-  "name": "allex_easinglib",
+  "name": "allex_easinglowlevellib",
   "version": "0.0.1",
   "description": "Easing lib",
   "main": "src/index.js",
