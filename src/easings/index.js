@@ -1,4 +1,4 @@
-function createBaseEasings (EasingRegistry) {
+function createBaseEasings (EasingRegistry, isArray) {
   'use strict';
 
   function OutBounce(t, b, c, d) {
@@ -189,7 +189,7 @@ function createBaseEasings (EasingRegistry) {
   EasingRegistry.add('PiecewiseLinear', function(t, b, c, d, s) {
     var mp = {b:b, d:d, c:c, t:t}, _mp = mp,
       acc = {b:0, d:d, c:0, t:t, time:0, duration:0}, _acc = acc;
-    if (HERS.isArray(s)) {
+    if (isArray(s)) {
       s.some(function (p) {
         _acc.time += p.duration*d;
         //console.log(t, '<', _acc.time, '?');

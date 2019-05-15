@@ -1,4 +1,4 @@
-function createEasing (inherit, isFunction, Map) {
+function createEasing (inherit, isFunction, isArray, Map) {
   'use strict';
 
   function EasingRegistry () {
@@ -17,7 +17,7 @@ function createEasing (inherit, isFunction, Map) {
   };
 
   var instance = new EasingRegistry();
-  require('./easings')(instance);
+  require('./easings')(instance, isArray);
 
   return {
     EasingRegistry : instance
